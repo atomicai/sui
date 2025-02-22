@@ -4,6 +4,8 @@ services:
   front:
     image: sui:latest
     container_name: sui
+    environment:
+      SUI_PORT_ALLOW_ORIGIN: ${SUI_PORT_ALLOW_ORIGIN}
     ports:
       - 10000:10000
     command: ["hypercorn", "sui.api.run:app", "--config", "/app/hypercorn.toml"]
