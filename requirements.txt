@@ -1,0 +1,4 @@
+Quart==0.20.0
+Quart-Session==3.0.0
+loguru==0.7.2
+quart-cors==0.8.0
